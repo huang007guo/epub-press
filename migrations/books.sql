@@ -1,4 +1,4 @@
-CREATE TABLE `books` (
+CREATE TABLE `Books` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(200) DEFAULT NULL,
   `sections` text,
