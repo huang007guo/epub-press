@@ -38,6 +38,7 @@
         "jimp": "^0.2.28",
         "marked": "^0.3.9",
         "morgan": "^1.9.0",
+        "mysql2": "^1.5.1",
         "newrelic": "^1.39.1",
         "node-readability": "github:haroldtreen/readability",
         "nodemailer": "^2.7.0",
