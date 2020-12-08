@@ -12,3 +12,4 @@ ebooks/**
 !ebooks/.gitkeep
 *.log
 hidden
+/.idea
