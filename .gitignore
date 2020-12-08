@@ -13,3 +13,4 @@ ebooks/**
 *.log
 hidden
 /.idea
+/package-lock.json
