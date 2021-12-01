@@ -42,7 +42,7 @@
         "newrelic": "^1.39.1",
         "node-readability": "github:haroldtreen/readability",
         "nodemailer": "^2.7.0",
-        "nodepub": "github:haroldtreen/nodepub",
+        "nodepub": "^3.0.7",
         "pg": "^6.4.2",
         "pg-hstore": "^2.3.2",
         "request": "^2.83.0",

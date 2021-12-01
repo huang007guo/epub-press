@@ -1,2 +1,2 @@
-npm run start
+npm run start:debug
 pause
