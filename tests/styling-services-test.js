@@ -42,19 +42,19 @@ describe('StylingService', () => {
         it('aligns single characters to the middle of the page', () => {
             const line = StylingService.stringToLines('a')[0];
 
-            assert.equal(line.x, StylingService.MAX_X / 2 - StylingService.CHAR_WIDTH / 2);
+            assert.equal(line.x, StylingService.MAX_X / 2 - StylingService.CHAR_ASCII_WIDTH / 2);
             assert.equal(line.y, StylingService.MIN_Y);
             assert.equal(line.content, 'a');
         });
 
         it('aligns long words to the left margin', () => {
             const line = StylingService.stringToLines('a'.repeat(1000))[0];
-            assert.isAtMost(line.x, StylingService.MARGIN + StylingService.CHAR_WIDTH);
+            assert.isAtMost(line.x, StylingService.MARGIN + StylingService.CHAR_ASCII_WIDTH);
         });
 
         it('shortens lines to fit the width', () => {
             const line = StylingService.stringToLines('a'.repeat(100))[0];
-            const lineLength = line.content.length * StylingService.CHAR_WIDTH;
+            const lineLength = line.content.length * StylingService.CHAR_ASCII_WIDTH;
             const rightMargin = StylingService.MAX_X - StylingService.MARGIN;
 
             assert.isAtMost(line.x + lineLength, rightMargin);
@@ -87,7 +87,7 @@ describe('StylingService', () => {
         it('returns the line and the extra string for long lines', () => {
             const str = 'aaa '.repeat(100);
             const line = StylingService.stringToLine(str);
-            const maxCharCount = StylingService.LINE_WIDTH / StylingService.CHAR_WIDTH;
+            const maxCharCount = StylingService.LINE_WIDTH / StylingService.CHAR_ASCII_WIDTH;
 
             assert.isAtMost(line.content.length, maxCharCount);
             assert.equal(`${line.content} ${line.extra}`, str);
