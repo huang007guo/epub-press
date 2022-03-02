@@ -1,2 +1,3 @@
-cd G:\xampp\htdocs\my\epub-press\
-G:\xampp\htdocs\my\epub-press\start.bat
+cd D:\PAN\GPAN\xampp\htdocs\my\epub-press
+D:
+D:\PAN\GPAN\xampp\htdocs\my\epub-press\start.bat
