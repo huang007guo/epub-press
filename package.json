@@ -39,7 +39,7 @@
         "marked": "^0.8.2",
         "morgan": "^1.9.0",
         "mysql2": "^1.5.1",
-        "newrelic": "^1.39.1",
+        "newrelic": "^10.3.1",
         "node-readability": "github:haroldtreen/readability",
         "nodemailer": "^2.7.0",
         "nodepub": "^3.0.7",
